@@ -6,18 +6,31 @@ const path = require('path');
 
 const app = express();
 
+app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
+  res.render('index');
 });
 
 app.get('/lesson1', function(req, res){
-  res.sendFile(__dirname + '/lesson1.html');
+  res.render('lesson1');
+});
+
+app.get('/lesson2', function(req, res){
+  res.render('lesson2');
+});
+
+app.get('/compose', function (req, res){
+  res.render('compose');
+});
+
+app.get('/lesson3', function(req, res){
+  res.render('lesson3');
 });
 
 app.get('/toc', function(req, res){
-  res.sendFile(__dirname + '/toc.html');
+  res.render('toc');
 });
 
 app.listen(3010, function(req, res){
