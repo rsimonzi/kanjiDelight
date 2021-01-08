@@ -33,6 +33,15 @@ app.get('/toc', function(req, res){
   res.render('toc');
 });
 
+app.get('/about', function(req, res){
+  res.render('about');
+});
+
+app.get('/contact', function(req, res){
+  res.render('contact');
+});
+
+
 app.listen(3010, function(req, res){
   console.log("Server running on port 3010");
 });
