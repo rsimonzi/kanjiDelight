@@ -37,6 +37,12 @@ app.get('/about', function(req, res){
   res.render('about');
 });
 
+app.get('/signin', function(req, res){
+  res.render('signin');
+});
+
+
+
 app.get('/contact', function(req, res){
   res.render('contact');
 });
