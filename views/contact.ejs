@@ -1,4 +1,24 @@
 <%- include('header'); %>
+<br />
+<br />
+<h1>Contact Us</h1>
+<br>
 
-<h1> Contact Page</h1>
+<form method="post" action="mailto:rsimonzi@hotmail.com" enctype="text/plain">
+  <div class="form-group">
+    <label>Your Name:</label>
+    <br />
+    <input type="text" name="yourName" value="" class="form-control"></input>
+    <br>
+    <label>Your Email: </label>
+    <br />
+    <input type="email" name="yourEmail" value=""></input>
+    <br>
+    <label>Your Message:</label>
+    <br />
+    <textarea name="yourMessage" rows="8" cols="80" class="form-control"></textarea>
+    <br />
+    </div>
+    <button type="submit">Submit</button>
+  </form>
 <%- include('footer'); %>
