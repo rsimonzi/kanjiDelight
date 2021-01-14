@@ -85,21 +85,8 @@ app.get('/', function(req, res){
   res.render('index');
 });
 
-app.get('/lesson1', function(req, res){
-  console.log(lessonObject);
-  res.render('lesson1');
-});
-
-app.get('/lesson2', function(req, res){
-  res.render('lesson2');
-});
-
 app.get('/compose', function (req, res){
   res.render('compose');
-});
-
-app.get('/lesson3', function(req, res){
-  res.render('lesson3');
 });
 
 app.get('/toc', function(req, res){
