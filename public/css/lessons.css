@@ -30,6 +30,10 @@ table, th, td {
   font-size: 1.25rem;
 }
 
+.tocc {
+  text-align: left;
+}
+
 h3, h2, h1 {
   text-align: center;
 }
