@@ -15,6 +15,7 @@ mongoose.connect('mongodb://localhost: 27017/kanjiDelightDB', {
 });
 
 const lessonsSchema = {
+  idNo: Number,
   pageNumber: String,
   chapter: String,
   lesson: String,
@@ -28,6 +29,7 @@ const lessonsSchema = {
 const Lesson = mongoose.model("Lesson", lessonsSchema);
 
 const lesson1 = new Lesson({
+  idNo: 1,
   pageNumber: '一 | 壱 | 1',
   chapter: "第一章 | だいいっしょう| Chapter 1",
   lesson: "第一課 | だいいっか | Lesson 1",
@@ -64,6 +66,7 @@ const lesson1 = new Lesson({
 });
 
 const lesson2 = new Lesson({
+  idNo: 2,
   pageNumber: '二 | 弐 | 2',
   chapter: "第一章 | だいいっしょう| Chapter 1",
   lesson: "第二課 | だい二か | Lesson 2",
@@ -112,7 +115,7 @@ Lesson.insertMany(defaultLessons, function(err){
 });
 
 let lessonObject = [{
-    id: 1,
+    _id: 1,
     pageNumber: '一 | 壱 | 1',
     chapter: "第一章 | だいいっしょう| Chapter 1",
     lesson: "第一課 | だいいっか | Lesson 1",
