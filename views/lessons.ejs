@@ -31,7 +31,13 @@
 <h2 class="tocc">Table of Contents</h2>
 <h3><%= chapter %></h3>
 <h3><%= lesson %></h3>
-<h3><%= list %></h3>
+
+<% let x = " " %>
+<% for (let i = 0; i < list.length; i++){ %>
+<%  x += " " + list[i] + " "  %>
+<% } %>
+<h3><%= x %></h3>
+
 
 <br />
 <br />
