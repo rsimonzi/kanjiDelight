@@ -11,16 +11,47 @@ h4 {
   margin-right: 20px;
 }
 
-table, th, td {
+table, td {
   border-style: solid;
   border-width: 1px;
   border-color: #898791;
   border-collapse: collapse;
   color: #898791;
-  text-align: center;
+  text-align: left;
   margin: auto;
   width: 100%;
   table-layout: fixed;
+}
+
+td {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #898791;
+  border-collapse: collapse;
+  color: #898791;
+  text-align: left;
+  padding-left: 30px;
+  table-layout: fixed;
+}
+
+th {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #898791;
+  border-collapse: collapse;
+  color: #898791;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.less {
+  padding-left: 5px;
+}
+
+.inline {
+  float: left;
 }
 
 h3, h2 {
