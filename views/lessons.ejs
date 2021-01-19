@@ -2,33 +2,19 @@
 
 <br />
 
+<% const numOfDocs = 8; %>
 
 <ul class='toc'>
-  <li><h4><a href="/lessons/lesson + " >Lesson 1</a></h4></li>
-  <li><h4><a href="/lessons/lesson2">Lesson 2</a></h4></li>
-  <li><h4><a href="/lessons/lesson3">Lesson 3</a></h4></li>
-  <li><h4><a href="/lessons/lesson4">Lesson 4</a></h4></li>
-  <li><h4><a href="/lessons/lesson5">Lesson 5</a></h4></li>
-  <li><h4><a href="/lessons/lesson6">Lesson 6</a></h4></li>
-  <li><h4><a href="/lessons/lesson7">Lesson 7</a></h4></li>
-  <li><h4><a href="/lessons/lesson8">Lesson 8</a></h4></li>
-  <li><h4><a href="/lessons/lesson9">Lesson 9</a></h4></li>
-  <li><h4><a href="/lessons/lesson10">Lesson 10</a></h4></li>
-  <li><h4><a href="/lessons/lesson11">Lesson 11</a></h4></li>
-  <li><h4><a href="/lessons/lesson12">Lesson 12</a></h4></li>
-  <li><h4><a href="/lessons/lesson13">Lesson 13</a></h4></li>
-  <li><h4><a href="/lessons/lesson14">Lesson 14</a></h4></li>
-  <li><h4><a href="/lessons/lesson15">Lesson 15</a></h4></li>
-  <li><h4><a href="/lessons/lesson16">Lesson 16</a></h4></li>
-  <li><h4><a href="/lessons/lesson17">Lesson 17</a></h4></li>
-  <li><h4><a href="/lessons/lesson18">Lesson 18</a></h4></li>
-  <li><h4><a href="/lessons/lesson19">Lesson 19</a></h4></li>
-  <li><h4><a href="/lessons/lesson20">Lesson 20</a></h4></li>
+  <h2 class="tocc">Table of Contents</h2>
+<%  for (let i = 0; i < numOfDocs; i++) {  %>
+  <li><h4><a href="/lessons/<%= i + 1 %>" >Lesson <%= i + 1 %></a></h4></li>
+<% } %>
+
 </ul>
 <h4 class='pageno'><%= pageNo %></h4>
 
 <br />
-<h2 class="tocc">Table of Contents</h2>
+
 <h3><%= chapter %></h3>
 <h3><%= lesson %></h3>
 
