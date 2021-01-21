@@ -28,6 +28,7 @@ table, th, td {
   text-align: left;
   margin: auto;
   font-size: 1.25rem;
+  padding-left: 40px;
 }
 
 .tocc {
@@ -47,8 +48,9 @@ p {
 }
 
 ul {
+  float: left;
   list-style-type: none;
-  margin: auto;
+  margin-right: 5%;
   padding: 0;
   width: 23%;
   background-color: #f1f1f1;

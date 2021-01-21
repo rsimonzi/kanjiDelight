@@ -287,25 +287,31 @@ idNo: 8,
 pageNumber: '八 | 捌 | 8',
 chapter: "第一章 | だいいっしょう| Chapter 1",
 lesson: "第八課 | だいはちか | Lesson 8",
-charList: ['国', '小', '書', '口', '方'],
+charList: ['働', '州', '生', '九', '長'],
 speakers: ['山本', '川田', '川本', '山田', '山本',
-'川田', '川本', '山田', '山本', '川田', '川本'
+'川田', '川本', '山田', '山本', '川田', '川本', '山本', '川田', '川本', '山田'
 ],
 sentences: [
-'学者に会う', "出口に行く", '外国から来る', '小さい田を買う', '四時にする',
-'今月川に行く', '来週行く', '東の方から来る', '今日本を買う', '本を書く'
+'来月外国に行く', "九部使う", '今大きい本を読む', '九部学ぶ', '長い形を視る',
+'先生を観る', '時々月を見る', '本州に行く', '東京から来る', '九時時にする',
+'学生に会う', '出口に行く', '今日色々な本を買う', '日本人に会う', '今週十一時に働く'
 ],
 translatedSentences: [
-'I/We/He, she/They meet a scholar next month.',
+'I/We/He, she/They go to a foreign country next month',
+'I/We/He, she/They use nine parts',
+'I/We/He, she/They read a large book now',
+'I/We/He, she/They learn nine parts',
+'I/We/He, she/They see a long pattern',
+'I/We/He, she/They see the teacher',
+'I/We/He, she/They see the moon sometimes',
+'I/We/He, she/They go to Honshu',
+'I/We/He, she/They come from Tokyo',
+'I/We/He, she/They do it at nine oclock',
+'I/We/He, she/They meet a university student',
 'I/We/He, she/They go to the exit',
-'I/We/He, she/They come from a foreign country',
-'I/We/He, she/They buy a small field',
-'I/We/He, she/They do it at four oclock',
-'I/We/He, she/They go to the river this month',
-'I/We/He, she/They go next week',
-'I/We/He, she/They come from the east',
-'I/We/He, she/They buy a book today',
-'I/We/He, she/They write a book'
+'I/We/He, she/They buy various books today',
+'I/We/He, she/They meet a Japanese person',
+'I/We/He, she/They work at eleven o’clock this week'
 ],
 grammarPoints: [
 '',
@@ -316,7 +322,128 @@ grammarPoints: [
 ]
 });
 
-const defaultLessons = [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8];
+const lesson9 = new Lesson({
+idNo: 9,
+pageNumber: '八 | 捌 | 9',
+chapter: "第一章 | だいいっしょう| Chapter 1",
+lesson: "第九課 | だいきゅうか | Lesson 9",
+charList: ['語', '銀', '崎', '阪', '中'],
+speakers: ['山本', '川田', '川本', '山田', '山本',
+'川田', '川本', '山田', '山本', '川田', '川本', '山本', '川田', '川本', '山田'
+],
+sentences: [
+'今月崎に行く', "三十九部使う", '今小さい本を書く', '二十部学ぶ', '長い阪を視る',
+'川田先生を観る', '銀色の車を買う', '中国に行く', '四月東京から来る', '五時にする',
+'大学生に会う', '今語る', '今日色々な人を観る', '大使に会う', '来週十二時に働く'
+],
+translatedSentences: [
+'I/We/He, she/They go to the cape this month',
+'I/We/He, she/They use thirty-nine parts',
+'I/We/He, she/They write a small book now',
+'I/We/He, she/They learn twenty parts',
+'I/We/He, she/They see a long slope',
+'I/We/He, she/They see Professor Kawada',
+'I/We/He, she/They are buying a silver-colored car',
+'I/We/He, she/They go to China',
+'I/We/He, she/They come from Tokyo in April',
+'I/We/He, she/They do it at five oclock',
+'I/We/He, she/They meet a university student',
+'I/We/He, she/They speak now',
+'I/We/He, she/They see various people today',
+'I/We/He, she/They meet the ambassador',
+'I/We/He, she/They work at twelve oclock next week'
+],
+grammarPoints: [
+'',
+'',
+'',
+'',
+''
+]
+});
+
+const lesson10 = new Lesson({
+idNo: 10,
+pageNumber: '十 | 拾 | 10',
+chapter: "第一章 | だいいっしょう| Chapter 1",
+lesson: "第十課 | だいじゅうか | Lesson 10",
+charList: ['市', '社', '村', '方', '森'],
+speakers: ['山本', '川田', '川本', '山田', '山本',
+'川田', '川本', '山田', '山本', '川田', '川本', '山本', '川田', '川本'
+],
+sentences: [
+'来月四国に行く', "国会で働く", '九月山口に行く', '日本語で語る', '社から来る',
+'森を観る', '今月村に行く', '長い形を視る', '時々日を見る', '東の方に行く',
+'一時時にする', '山本大使に会う', '今市に行く', '今日色々な本を書く', '中国人に会う'
+],
+translatedSentences: [
+'I/We/He, she/They go to Shikoku next month',
+'I/We/He, she/They work at the Diet',
+'I/We/He, she/They go to Yamaguchi in September',
+'I/We/He, she/They speak in Japanese',
+'I/We/He, she/They come from the shrine',
+'I/We/He, she/They see the forest',
+'I/We/He, she/They go to the village this month',
+'I/We/He, she/They see a long pattern',
+'I/We/He, she/They see the sun sometimes',
+'I/We/He, she/They go eastward/toward the east',
+'I/We/He, she/They do it at one oclock',
+'I/We/He, she/They meet Ambassador Yamamoto',
+'I/We/He, she/They go to the city',
+'I/We/He, she/They write various books today',
+'I/We/He, she/They meet a Chinese person'
+],
+grammarPoints: [
+'',
+'',
+'',
+'',
+''
+]
+});
+
+const lesson11 = new Lesson({
+idNo: 11,
+pageNumber: '十一 | 拾壱 | 1',
+chapter: "第二章 | だいにしょう| Chapter 2",
+lesson: "第十一課 | だいじゅうか | Lesson 11",
+charList: ['市', '社', '村', '方', '森'],
+speakers: ['山本', '川田', '川本', '山田', '山本',
+'川田', '川本', '山田', '山本', '川田', '川本', '山本', '川田', '川本'
+],
+sentences: [
+'来月四国に行く', "国会で働く", '九月山口に行く', '日本語で語る', '社から来る',
+'森を観る', '今月村に行く', '長い形を視る', '時々日を見る', '東の方に行く',
+'一時時にする', '山本大使に会う', '今市に行く', '今日色々な本を書く', '中国人に会う'
+],
+translatedSentences: [
+'I/We/He, she/They go to Shikoku next month',
+'I/We/He, she/They work at the Diet',
+'I/We/He, she/They go to Yamaguchi in September',
+'I/We/He, she/They speak in Japanese',
+'I/We/He, she/They come from the shrine',
+'I/We/He, she/They see the forest',
+'I/We/He, she/They go to the village this month',
+'I/We/He, she/They see a long pattern',
+'I/We/He, she/They see the sun sometimes',
+'I/We/He, she/They go eastward/toward the east',
+'I/We/He, she/They do it at one oclock',
+'I/We/He, she/They meet Ambassador Yamamoto',
+'I/We/He, she/They go to the city',
+'I/We/He, she/They write various books today',
+'I/We/He, she/They meet a Chinese person'
+],
+grammarPoints: [
+'',
+'',
+'',
+'',
+''
+]
+});
+
+
+const defaultLessons = [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11];
 
 Lesson.insertMany(defaultLessons, function(err){
 if(err) {
