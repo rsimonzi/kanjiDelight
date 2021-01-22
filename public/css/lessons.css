@@ -4,7 +4,7 @@ body {
   border-color: #898791;
   border-radius: 10px;
   color: #898791;
-  background-color: #Fff;
+  background-color: #f1f1f1;
   margin: 10px;
 }
 
@@ -52,9 +52,9 @@ ul {
   list-style-type: none;
   margin-right: 5%;
   padding: 0;
-  width: 23%;
+  width: 14%;
   background-color: #f1f1f1;
-  height: 90%;
+  height: 100%;
   /* Full height */
   position: fixed;
   /* Make it stick, even on scroll */
