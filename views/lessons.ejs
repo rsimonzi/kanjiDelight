@@ -2,10 +2,12 @@
 
 <br />
 
-<% const numOfDocs = 10; %>
+<% const numOfDocs = 12; %>
 
 <ul class='toc'>
   <h2 class="tocc">Table of Contents</h2>
+  <h2><button type="button" class='toc'><i class="fas fa-caret-square-left"></i></button></h2>
+
   <%  for (let i = 0; i < numOfDocs; i++) {  %>
   <li>
     <h4><a href="/lessons/<%= i + 1 %>">Lesson <%= i + 1 %></a></h4>
@@ -29,7 +31,7 @@
 <br />
 <br />
 
-<table style="width:60%">
+<table style="width:75%">
   <tr>
   </tr>
   <% for (let i = 0; i < sentences.length; i++){ %>

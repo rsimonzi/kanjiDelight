@@ -35,6 +35,11 @@ table, th, td {
   text-align: center;
 }
 
+.toc {
+  border-style: none;
+  color: #898791;
+}
+
 h3, h2, h1 {
   text-align: center;
 }
