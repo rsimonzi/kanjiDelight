@@ -21,7 +21,16 @@ table, td {
   margin: auto;
   width: 100%;
   table-layout: fixed;
-}
+  }
+
+  .no-borders {
+      border-style: none;
+      border-collapse: collapse;
+      text-align: left;
+      margin: auto;
+      font-size: 1.25rem;
+      padding-left: 40px;
+    }
 
 td {
   border-style: solid;

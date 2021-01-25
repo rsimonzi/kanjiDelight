@@ -22,14 +22,30 @@ a {
   margin-right: 20px;
 }
 
-table, th, td {
+.borders {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #898791;
+  border-collapse: collapse;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  table-layout: fixed;
+  margin-right: 10%;
+}
+
+.sound-button {
+  color: #898791;
+}
+
+.no-borders {
   border-style: none;
   border-collapse: collapse;
   text-align: left;
   margin: auto;
   font-size: 1.25rem;
-  padding-left: 40px;
-}
+  margin-right: -5%;
+  }
 
 .tocc {
   text-align: center;
