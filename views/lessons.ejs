@@ -49,29 +49,23 @@
 
 <table class="borders" style="width:75%">
   <tr class="borders">
-    <th class="borders">詞 | ことば | words</th>
+    <th class="borders">詞 | ことば | word</th>
     <th class="borders">平仮名 | ひらがな | hiragana</th>
     <th class="borders">意味 | いみ | meaning</th>
     <th class="borders">品詞 | ひんし | part of speech</th>
     <th class="borders">発音 | はつおん | pronunciation</th>
   </tr>
+
+<%  for (let i = 0; i < word.length; i++) { %>
   <tr class="borders">
-    <td class="borders">Jill</td>
-    <td class="borders">Smith</td>
-    <td class="borders">50</td>
-    <td class="borders">50</td>
-    <td class="borders"><button class="sound-button" type="button"><i class="fas fa-volume-off"></i></button>
-    </td>
+    <td class="borders"><%= word[i]  %></td>
+    <td class="borders"><%= hiragana[i] %></td>
+    <td class="borders"><%= meaning[i] %></td>
+    <td class="borders"><%= partOfSpeech[i] %></td>
+    <td class="borders"><%= pronunciation[i] %></td>
   </tr>
-  <tr class="borders">
-    <td class="borders">Eve</td>
-    <td class="borders">Jackson</td>
-    <td class="borders">94</td>
-    <td class="borders">50</td>
-    <td class="borders"><button class="sound-button" type="button"><i class="fas fa-volume-off"></i></button>
-      </td>
-  </tr>
-</table>
+<%  } %>
+  </table>
 
 <br />
 <br />

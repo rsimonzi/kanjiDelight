@@ -23,7 +23,12 @@ const lessonsSchema = {
   speakers: [String],
   sentences: [String],
   translatedSentences: [String],
-  grammarPoints: [String]
+  grammarPoints: [String],
+  word: [String],
+  hiragana: [String],
+  meaning: [String],
+  partOfSpeech: [String],
+  pronunciation: [String]
 }
 
 const Lesson = mongoose.model("Lesson", lessonsSchema);
@@ -62,7 +67,12 @@ const lesson1 = new Lesson({
     'Since these verbs are irregular, you need to memorize each conjugation.',
     'Group 2 verbs 上一段動詞 Kami ichidan verbs are verbs that end in いる or える',
     'Group 1 verbs are all other verbs that are not in Group 2 or Group 3 – they are called 五段動詞　Godan verbs.'
-  ]
+  ],
+  word: ['食べる', '行く'],
+  hiragana: ['たべる', 'いく'],
+  meaning: ['to eat', 'to go'],
+  partOfSpeech: ['動詞 | どうし | verb', '動詞 | どうし | verb'],
+  pronunciation: ['taberu.mp3', 'iku.mp3']
 });
 
 const lesson2 = new Lesson({
@@ -104,7 +114,12 @@ const lesson2 = new Lesson({
     'に is a particle with multiple meanings – here it means “to”, “in the direction of” when referring to a place.',
     'にis also used with the verb “会う” to indicate the person you are meeting.',
     'を is a particle that indicates a direct object, i.e. what you are buying or seeing.'
-  ]
+  ],
+  word: [],
+  hiragana: [],
+  meaning: [],
+  partOfSpeech: [],
+  pronunciation: []
 });
 
 const lesson3 = new Lesson({
@@ -145,7 +160,12 @@ const lesson3 = new Lesson({
   grammarPoints: [
     'When used with time, such as one o’clock, に indicates an exact time.',
     'If you do not want to state an exact time, then do not include the particle に, i.e., then say 一時出る.'
-  ]
+  ],
+  word: [],
+  hiragana: [],
+  meaning: [],
+  partOfSpeech: [],
+  pronunciation: []
 });
 
 const lesson4 = new Lesson({
@@ -180,7 +200,12 @@ const lesson4 = new Lesson({
     '',
     '',
     ''
-  ]
+  ],
+  word: [],
+  hiragana: [],
+  meaning: [],
+  partOfSpeech: [],
+  pronunciation: []
 });
 
 const lesson5 = new Lesson({
@@ -215,7 +240,12 @@ const lesson5 = new Lesson({
     '',
     '',
     ''
-  ]
+  ],
+  word: [],
+  hiragana: [],
+  meaning: [],
+  partOfSpeech: [],
+  pronunciation: []
 });
 
 const lesson6 = new Lesson({
@@ -249,7 +279,12 @@ const lesson6 = new Lesson({
     '',
     '',
     ''
-  ]
+  ],
+  word: [],
+  hiragana: [],
+  meaning: [],
+  partOfSpeech: [],
+  pronunciation: []
 });
 
 const lesson7 = new Lesson({
@@ -283,7 +318,12 @@ const lesson7 = new Lesson({
     '',
     '',
     ''
-  ]
+  ],
+  word: [],
+  hiragana: [],
+  meaning: [],
+  partOfSpeech: [],
+  pronunciation: []
 });
 
 const lesson8 = new Lesson({
@@ -323,7 +363,12 @@ const lesson8 = new Lesson({
     '',
     '',
     ''
-  ]
+  ],
+  word: [],
+  hiragana: [],
+  meaning: [],
+  partOfSpeech: [],
+  pronunciation: []
 });
 
 const lesson9 = new Lesson({
@@ -363,7 +408,12 @@ const lesson9 = new Lesson({
     '',
     '',
     ''
-  ]
+  ],
+  word: [],
+  hiragana: [],
+  meaning: [],
+  partOfSpeech: [],
+  pronunciation: []
 });
 
 const lesson10 = new Lesson({
@@ -403,7 +453,12 @@ const lesson10 = new Lesson({
     '',
     '',
     ''
-  ]
+  ],
+  word: [],
+  hiragana: [],
+  meaning: [],
+  partOfSpeech: [],
+  pronunciation: []
 });
 
 const lesson11 = new Lesson({
@@ -443,11 +498,16 @@ const lesson11 = new Lesson({
     '',
     '',
     ''
-  ]
+  ],
+  word: [],
+  hiragana: [],
+  meaning: [],
+  partOfSpeech: [],
+  pronunciation: []
 });
 
 
-const defaultLessons = [lesson1, lesson2, lesson3, lesson4, lesson5, lesson6, lesson7, lesson8, lesson9, lesson10, lesson11];
+const defaultLessons = [lesson1];
 
 Lesson.insertMany(defaultLessons, function(err) {
   if (err) {
@@ -504,7 +564,12 @@ app.get('/lessons/:requestedIdNo', function(req, res) {
           speakers: foundLesson.speakers,
           sentences: foundLesson.sentences,
           translatedSentences: foundLesson.translatedSentences,
-          grammarPoints: foundLesson.grammarPoints
+          grammarPoints: foundLesson.grammarPoints,
+          word: foundLesson.word,
+          hiragana: foundLesson.hiragana,
+          meaning: foundLesson.meaning,
+          partOfSpeech: foundLesson.partOfSpeech,
+          pronunciation: foundLesson.pronunciation
         });
       }
     }
