@@ -31,13 +31,14 @@
 <br />
 <br />
 
-<table class='no-borders' style="width:75%">
+<table class='no-borders' style="width:85%">
   <tr>
   </tr>
   <% for (let i = 0; i < sentences.length; i++){ %>
   <tr>
     <td><%= speakers[i] + ' ' + ':' + ' ' + ' ' %></td>
     <td><%= sentences[i] + ' ' + ' ' %></td>
+    <td><%= masuSentences[i] + ' ' + ' ' %></td>
     <td><%= translatedSentences[i] %></td>
   </tr>
   <% } %>
@@ -67,6 +68,8 @@
 <%  } %>
   </table>
 <br  />
+<br />
+<h3 class="tocc">文法 | ぶんぽう | Grammar</h3>
 <br />
   <table class='no-borders' style="width:90%">
     <tr>

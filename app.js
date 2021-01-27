@@ -22,6 +22,7 @@ const lessonsSchema = {
   charList: [String],
   speakers: [String],
   sentences: [String],
+  masuSentences: [String],
   translatedSentences: [String],
   grammarPoints: [String],
   word: [String],
@@ -47,6 +48,10 @@ const lesson1 = new Lesson({
   sentences: [
     '食べる。', "読む。", '学ぶ。', '視る。', '観る。',
     '見る。', '行く。', '来る。', 'する。', '会う。', '買う。'
+  ],
+  masuSentences: [
+    '食べます。', "読ます。", '学びます。', '視ます。', '観ます。',
+    '見ます。', '行きます。', '来ます。', 'します。', '会います。', '買います。'
   ],
   translatedSentences: [
     'I/We/He, She/They eat.',
@@ -565,6 +570,7 @@ app.get('/lessons/:requestedIdNo', function(req, res) {
           list: foundLesson.charList,
           speakers: foundLesson.speakers,
           sentences: foundLesson.sentences,
+          masuSentences: foundLesson.masuSentences,
           translatedSentences: foundLesson.translatedSentences,
           grammarPoints: foundLesson.grammarPoints,
           word: foundLesson.word,
