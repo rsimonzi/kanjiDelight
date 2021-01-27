@@ -66,13 +66,19 @@
   </tr>
 <%  } %>
   </table>
-
+<br  />
+<br />
+  <table class='no-borders' style="width:90%">
+    <tr>
+    </tr>
+    <% for (let i = 0; i < grammarPoints.length; i++){ %>
+    <tr>
+      <td><%= grammarPoints[i] + ' ' + ' ' + ' ' %></td>
+    </tr>
+    <% } %>
+  </table>
 <br />
 <br />
-<% for (let i = 0; i < grammarPoints.length; i++){ %>
-<p><%= grammarPoints[i]  %></p>
-<% } %>
-
 <br />
 <br />
 <br />
