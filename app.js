@@ -4,17 +4,21 @@ const bodyParser = require('body-parser');
 const ejs = require('ejs');
 const path = require('path');
 const _ = require('lodash');
+const encrypt = require('mongoose-encryption');
 
 const app = express();
 
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
-mongoose.connect('mongodb://localhost: 27017/kanjiDelightDB', {
-  useNewUrlParser: true
-});
+//mongoose.connect('mongodb://localhost: 27017/kanjiDelightDB', {
+//  useNewUrlParser: true
+//});
 
-const lessonsSchema = {
+var conn = mongoose.createConnection('mongodb://localhost:27017/userDB', {useNewUrlParser: true});
+var conn2 = mongoose.createConnection('mongodb://localhost:27017/kanjiDelightDB', {useNewUrlParser: true});
+
+const lessonsSchema = new mongoose.Schema ({
   idNo: Number,
   pageNumber: String,
   chapter: String,
@@ -30,9 +34,41 @@ const lessonsSchema = {
   meaning: [String],
   partOfSpeech: [String],
   pronunciation: [String]
-}
+});
 
-const Lesson = mongoose.model("Lesson", lessonsSchema);
+const usersSchema = new mongoose.Schema({
+  username: String,
+  password: String
+});
+
+const secret = "Thisisourlittlesecret";
+usersSchema.plugin(encrypt, {secret: secret, encryptedFields: ['password']});
+
+//const User = new mongoose.model("User", userSchema);
+
+
+//var Schema = new mongoose.Schema({})
+const User = conn.model('User', usersSchema);
+const Lesson = conn2.model('Lesson', lessonsSchema);
+
+
+
+
+//const Lesson = mongoose.model("Lesson", lessonsSchema);
+
+//mongoose.connect("mongodb://localhost:27017/userDB", {useNewUrlParser: true});
+
+//const conn = mongoose.createConnection('mongodb://localhost:27017');
+
+//const userSchema = {
+
+//};
+
+
+
+
+
+
 
 const lesson1 = new Lesson({
   idNo: 1,
@@ -542,6 +578,43 @@ app.get('/about', function(req, res) {
 
 app.get('/signup', function(req, res) {
   res.render('signup');
+});
+
+app.post('/signup', function(req, res){
+  const newUser = new User({
+    password: req.body.password,
+    username: req.body.email
+  });
+
+  console.log("This is the password: " + password);
+  console.log("This is the username: " + password);
+
+  newUser.save(function(err){
+    if (err){
+      console.log(err);
+      console.log("Username and password NOT saved.");
+    } else {
+      console.log("Username and Password saved.");
+      res.render('lessons');
+    }
+  });
+});
+
+app.post('/signin', function(req, res){
+  const username = req.body.email;
+  const password = req.body.password;
+
+  User.findOne({email: username}, function(err, foundUser){
+    if (err) {
+      console.log(err);
+    } else {
+      if (foundUser) {
+        if (foundUser.password === password) {
+          res.render("lessons");
+        }
+      }
+    }
+  });
 });
 
 app.get('/signin', function(req, res) {
