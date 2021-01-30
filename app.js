@@ -33,7 +33,8 @@ const lessonsSchema = new mongoose.Schema ({
   hiragana: [String],
   meaning: [String],
   partOfSpeech: [String],
-  pronunciation: [String]
+  pronunciation: [String],
+  exercises: [String]
 });
 
 const usersSchema = new mongoose.Schema({
@@ -115,7 +116,8 @@ const lesson1 = new Lesson({
   hiragana: ['たべる', 'いく'],
   meaning: ['to eat', 'to go'],
   partOfSpeech: ['動詞 | どうし | verb', '動詞 | どうし | verb'],
-  pronunciation: ['taberu.mp3', 'iku.mp3']
+  pronunciation: ['taberu.mp3', 'iku.mp3'],
+  exercises: []
 });
 
 const lesson2 = new Lesson({
@@ -650,7 +652,8 @@ app.get('/lessons/:requestedIdNo', function(req, res) {
           hiragana: foundLesson.hiragana,
           meaning: foundLesson.meaning,
           partOfSpeech: foundLesson.partOfSpeech,
-          pronunciation: foundLesson.pronunciation
+          pronunciation: foundLesson.pronunciation,
+          exercises: foundLesson.exercises
         });
       }
     }
