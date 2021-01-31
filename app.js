@@ -4,19 +4,15 @@ const bodyParser = require('body-parser');
 const ejs = require('ejs');
 const path = require('path');
 const _ = require('lodash');
-const encrypt = require('mongoose-encryption');
 
 const app = express();
 
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
-//mongoose.connect('mongodb://localhost: 27017/kanjiDelightDB', {
-//  useNewUrlParser: true
-//});
-
-var conn = mongoose.createConnection('mongodb://localhost:27017/userDB', {useNewUrlParser: true});
-var conn2 = mongoose.createConnection('mongodb://localhost:27017/kanjiDelightDB', {useNewUrlParser: true});
+mongoose.connect('mongodb://localhost: 27017/kanjiDelightDB', {
+ useNewUrlParser: true
+});
 
 const lessonsSchema = new mongoose.Schema ({
   idNo: Number,
@@ -42,20 +38,10 @@ const usersSchema = new mongoose.Schema({
   password: String
 });
 
-const secret = "Thisisourlittlesecret";
-usersSchema.plugin(encrypt, {secret: secret, encryptedFields: ['password']});
-
 //const User = new mongoose.model("User", userSchema);
-
-
 //var Schema = new mongoose.Schema({})
-const User = conn.model('User', usersSchema);
-const Lesson = conn2.model('Lesson', lessonsSchema);
 
-
-
-
-//const Lesson = mongoose.model("Lesson", lessonsSchema);
+const Lesson = mongoose.model("Lesson", lessonsSchema);
 
 //mongoose.connect("mongodb://localhost:27017/userDB", {useNewUrlParser: true});
 
@@ -64,13 +50,6 @@ const Lesson = conn2.model('Lesson', lessonsSchema);
 //const userSchema = {
 
 //};
-
-
-
-
-
-
-
 const lesson1 = new Lesson({
   idNo: 1,
   pageNumber: '一 | 壱 | 1',
@@ -552,7 +531,7 @@ const lesson11 = new Lesson({
 });
 
 
-const defaultLessons = [lesson1];
+const defaultLessons = [lesson1, lesson2, lesson3];
 
 Lesson.insertMany(defaultLessons, function(err) {
   if (err) {
@@ -588,10 +567,7 @@ app.post('/signup', function(req, res){
     username: req.body.email
   });
 
-  console.log("This is the password: " + password);
-  console.log("This is the username: " + password);
-
-  newUser.save(function(err){
+    newUser.save(function(err){
     if (err){
       console.log(err);
       console.log("Username and password NOT saved.");
