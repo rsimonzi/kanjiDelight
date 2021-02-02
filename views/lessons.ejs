@@ -13,6 +13,7 @@
     <h4><a href="/lessons/<%= i + 1 %>">Lesson <%= i + 1 %></a></h4>
   </li>
   <% } %>
+  });
 
 </ul>
 <h4 class='pageno'><%= pageNo %></h4>
@@ -23,9 +24,9 @@
 <h3><%= lesson %></h3>
 
 <% let x = " " %>
-<% for (let i = 0; i < list.length; i++){ %>
-<%  x += " " + list[i] + " "  %>
-<% } %>
+<% list.forEach(function(value){ %>
+<%  x += " " + value + " "  %>
+<% }) %>
 <h3><%= x %></h3>
 
 <br />
@@ -43,8 +44,8 @@
   </tr>
   <% } %>
 </table>
-<br  />
-<br  />
+<br />
+<br />
 <h3>単語 | たんご | Vocabulary</h3>
 <br />
 
@@ -57,7 +58,7 @@
     <th class="borders">発音 | はつおん | pronunciation</th>
   </tr>
 
-<%  for (let i = 0; i < word.length; i++) { %>
+  <%  for (let i = 0; i < word.length; i++) { %>
   <tr class="borders">
     <td class="borders"><%= word[i]  %></td>
     <td class="borders"><%= hiragana[i] %></td>
@@ -65,34 +66,35 @@
     <td class="borders"><%= partOfSpeech[i] %></td>
     <td class="borders"><%= pronunciation[i] %></td>
   </tr>
-<%  } %>
-  </table>
-<br  />
+  <%  } %>
+</table>
+<br />
 <br />
 <h3 class="tocc">文法 | ぶんぽう | Grammar</h3>
 <br />
-  <table class='no-borders' style="width:90%">
-    <tr>
-    </tr>
-    <% for (let i = 0; i < grammarPoints.length; i++){ %>
-    <tr>
-      <td><%= grammarPoints[i] + ' ' + ' ' + ' ' %></td>
-    </tr>
-    <% } %>
-  </table>
+<table class='no-borders' style="width:90%">
+  <tr>
+  </tr>
+  <%  grammarPoints.forEach(function(grammarPoint){ %>
+  <tr>
+    <td><%= grammarPoint + ' ' + ' ' + ' ' %></td>
+  </tr>
+  <% }) %>
+</table>
+
 <br />
 <br />
-  <h3 class="tocc">演習 | えんしゅう | Exercises</h3>
-  <br />
-    <table class='no-borders' style="width:90%">
-      <tr>
-      </tr>
-      <% for (let i = 0; i < exercises.length; i++){ %>
-      <tr>
-        <td><%= exercises[i] + ' ' + ' ' + ' ' %></td>
-      </tr>
-      <% } %>
-    </table>
+<h3 class="tocc">演習 | えんしゅう | Exercises</h3>
+<br />
+<table class='no-borders' style="width:90%">
+  <tr>
+  </tr>
+  <% exercises.forEach(function(exercise) { %>
+  <tr>
+    <td><%= exercise + ' ' + ' ' + ' ' %></td>
+  </tr>
+  <% }) %>
+</table>
 <br />
 <br />
 <br />
