@@ -545,6 +545,10 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
+app.get('/tategaki', function(req, res) {
+  res.render('tategaki');
+});
+
 app.get('/compose', function(req, res) {
   res.render('compose');
 });
