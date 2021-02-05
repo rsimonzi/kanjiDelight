@@ -9,3 +9,7 @@ body {
     color: #898791;
     background-color: #f1f1f1;
     }
+
+    div {
+      writing-mode: vertical-rl;
+    }

@@ -96,7 +96,7 @@ const lesson1 = new Lesson({
   meaning: ['to eat', 'to go'],
   partOfSpeech: ['動詞 | どうし | verb', '動詞 | どうし | verb'],
   pronunciation: ['taberu.mp3', 'iku.mp3'],
-  exercises: []
+  exercises: ['食べる', '時々行く']
 });
 
 const lesson2 = new Lesson({
