@@ -38,18 +38,8 @@ const usersSchema = new mongoose.Schema({
   password: String
 });
 
-//const User = new mongoose.model("User", userSchema);
-//var Schema = new mongoose.Schema({})
-
 const Lesson = mongoose.model("Lesson", lessonsSchema);
 
-//mongoose.connect("mongodb://localhost:27017/userDB", {useNewUrlParser: true});
-
-//const conn = mongoose.createConnection('mongodb://localhost:27017');
-
-//const userSchema = {
-
-//};
 const lesson1 = new Lesson({
   idNo: 1,
   pageNumber: '一 | 壱 | 1',
