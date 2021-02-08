@@ -209,8 +209,8 @@ const lesson4 = new Lesson({
     'I/We/He, she/They buy a car.'
   ],
   grammarPoints: [
-    '',
-    '',
+    'Japanese does not use personal pronouns such as he, she, we, I as often as English',
+    'The speaker is generally clear from the context or is referred to by name, i.e., Suzuki san',
     '',
     '',
     ''
