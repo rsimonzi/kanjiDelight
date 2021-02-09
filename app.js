@@ -211,8 +211,8 @@ const lesson4 = new Lesson({
   grammarPoints: [
     'Japanese does not use personal pronouns such as he, she, we, I as often as English',
     'The speaker is generally clear from the context or is referred to by name, i.e., Suzuki san',
-    '',
-    '',
+    'There are two main forms of Japanese - dictionary form and what is known is as desu masu form',
+    'Dictionary form is less formal than desu masu form but many grammar patterns require the dictionary form',
     ''
   ],
   word: [],
