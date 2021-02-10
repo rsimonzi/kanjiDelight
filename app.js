@@ -249,8 +249,8 @@ const lesson5 = new Lesson({
     'I/We/He, she/They buy a car.',
   ],
   grammarPoints: [
-    '',
-    '',
+    'を indicates the direct object of an action',
+    'から means "from"',
     '',
     '',
     ''
