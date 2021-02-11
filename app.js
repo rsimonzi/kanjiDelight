@@ -288,7 +288,7 @@ const lesson6 = new Lesson({
     'I/We/He, she/They meet a person.'
   ],
   grammarPoints: [
-    '',
+    'Japanese surnames often consist of two or more characters.',
     '',
     '',
     '',
