@@ -327,7 +327,7 @@ const lesson7 = new Lesson({
     'I/We/He, she/They write a book.'
   ],
   grammarPoints: [
-    '',
+    'Adjectives that end in い are called 形容詞',
     '',
     '',
     '',
