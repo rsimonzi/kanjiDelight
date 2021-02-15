@@ -688,7 +688,16 @@ const lesson10 = new Lesson({
     "I/We/He, she/They write various books today.",
     "I/We/He, she/They meet a Chinese person.",
   ],
-  grammarPoints: ["", "", "", "", ""],
+  grammarPoints: [
+    "To convert a 五段動詞 to informal past tense use the following rules:",
+    "If the verb ends in う or つ　or る, replace these syllables with った",
+    "If the verb ends in む or　ぬ　or ぶ replace these syllables with んだ",
+    "If the verb ends in く change this syllable to いた",
+    "If the verb ends in ぐ change this syllable to いだ",
+    "If the verb ends in す change this syllable to した",
+    "行く is irregular and becomes 行った",
+  ],
+
   word: [],
   hiragana: [],
   meaning: [],
