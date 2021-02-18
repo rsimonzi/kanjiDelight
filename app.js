@@ -764,8 +764,8 @@ const lesson11 = new Lesson({
   ],
   grammarPoints: [
     "To convert a 五段動詞 to potential form, change the last syllable from あto え and add る",
-    "To convert a 一段動詞 to potential form, drop the masu and add れる",
-    "",
+    "To convert a 一段動詞 to potential form, drop the masu and add られる",
+    "To convert a 一段動詞 to causative form, drop the masu and add させる",
     "",
     "",
   ],
