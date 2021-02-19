@@ -619,7 +619,7 @@ const lesson9 = new Lesson({
   ],
   grammarPoints: [
     "Adjectives that are followed by な are called 形容動詞 or na nominals",
-    "",
+    "To say that you 'think you will not do something' use dictionary form of verb + mai + to omou, i.e. 行くまいと思う",
     "",
     "",
     "",
