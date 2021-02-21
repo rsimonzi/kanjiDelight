@@ -248,7 +248,8 @@ const lesson3 = new Lesson({
   ],
   grammarPoints: [
     "When used with time, such as one o’clock, に indicates an exact time.",
-    "If you do not want to state an exact time, then do not include the particle に, i.e., then say 一時出る.",
+      "If you do not want to state an exact time, then do not include the particle に, i.e., then say 一時出る.",
+    "To form the positive form of 'I think I will ...', for a 五段動詞, change last syllable from う to お and add と思うう"
   ],
   word: [],
   hiragana: [],
