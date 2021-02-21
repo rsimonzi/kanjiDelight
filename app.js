@@ -308,7 +308,7 @@ const lesson4 = new Lesson({
     "The speaker is generally clear from the context or is referred to by name, i.e., Suzuki san",
     "There are two main forms of Japanese - dictionary form and what is known is as desu masu form",
     "Dictionary form is less formal than desu masu form but many grammar patterns require the dictionary form",
-    "",
+    "To say that you want to do something, use the stem of the verb, i.e, tabe from tabemasu and add tai, i.e., tabetai",
   ],
   word: [],
   hiragana: [],
