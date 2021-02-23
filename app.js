@@ -365,7 +365,7 @@ const lesson5 = new Lesson({
   grammarPoints: [
     "を indicates the direct object of an action",
     'から means "from"',
-    "",
+    "To create the presumptive form of a verb, drop the masu and add mashoo",
     "",
     "",
   ],
