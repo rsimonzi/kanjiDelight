@@ -367,7 +367,7 @@ const lesson5 = new Lesson({
     'から means "from"',
     "To create the presumptive form of a verb, drop the masu and add mashoo",
     "The presumptive form a verb is the shall we or let's construction",
-    "",
+    "To string adjectives together, use the kute form of the adjective",
   ],
   word: [],
   hiragana: [],
