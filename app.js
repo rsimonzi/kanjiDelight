@@ -423,7 +423,7 @@ const lesson6 = new Lesson({
   grammarPoints: [
     "Japanese surnames often consist of two or more characters.",
     "Adjectives that are used with な are called 形容動詞",
-    "",
+    "Honorific speech is used to refer to third parties as well as the listener",
     "",
     "",
   ],
