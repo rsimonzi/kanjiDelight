@@ -425,7 +425,7 @@ const lesson6 = new Lesson({
     "Adjectives that are used with な are called 形容動詞",
     "Honorific speech is used to refer to third parties as well as the listener",
     "Humble speech is used to refer to oneself or members of one's family",
-    "",
+    "遣る yaru is only used with younger sisters and brothers or pets",
   ],
   word: [],
   hiragana: [],
