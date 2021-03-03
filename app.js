@@ -479,7 +479,7 @@ const lesson7 = new Lesson({
   ],
   grammarPoints: [
     "Adjectives that end in い are called 形容詞",
-    "",
+    "Adjectives that have shii tend to refer to emotional states",
     "",
     "",
     "",
