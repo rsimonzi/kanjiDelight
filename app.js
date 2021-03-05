@@ -481,7 +481,7 @@ const lesson7 = new Lesson({
     "Adjectives that end in い are called 形容詞",
     "Adjectives that have shii tend to refer to emotional states",
     "Particles are called 助詞　じょし",
-    "",
+    "Conjunctions are called 接続詞　せつぞくし",
     "",
   ],
   word: [],
