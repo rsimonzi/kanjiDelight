@@ -482,7 +482,7 @@ const lesson7 = new Lesson({
     "Adjectives that have shii tend to refer to emotional states",
     "Particles are called 助詞　じょし",
     "Conjunctions are called 接続詞　せつぞくし",
-    "",
+    "To say that you want something, use noun + 欲しい",
   ],
   word: [],
   hiragana: [],
