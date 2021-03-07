@@ -551,7 +551,7 @@ const lesson8 = new Lesson({
   grammarPoints: [
     "The symbol 々 is used to indicate that the syllable that precedes it is to be repeated",
     "The initial sound may be changed to another form called 音便",
-    "",
+    "Japanese characters are a mixture of traditional chinese and simplified chinese characters.",
     "",
     "",
   ],
