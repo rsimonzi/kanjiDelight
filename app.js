@@ -553,7 +553,7 @@ const lesson8 = new Lesson({
     "The initial sound may be changed to another form called 音便",
     "Japanese characters are a mixture of traditional chinese and simplified chinese characters.",
     "Japanese syllables can change the first letter of a syllable when preceded by another syllable",
-    "",
+    "The quotation symbol for Japanese is []",
   ],
   word: [],
   hiragana: [],
