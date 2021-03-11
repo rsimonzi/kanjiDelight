@@ -623,7 +623,7 @@ const lesson9 = new Lesson({
     "Adjectives that are followed by な are called 形容動詞 or na nominals",
     "To say that you 'think you will not do something' use dictionary form of verb + mai + to omou, i.e. 行くまいと思う",
     "There is a set of kanji that is for use in names called the 人名用漢字",
-    "",
+    "The polite form of the copula is です and the informal form is だ",
     "",
   ],
   word: [],
